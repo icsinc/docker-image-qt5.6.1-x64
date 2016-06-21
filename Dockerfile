@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN apt-get update && apt-get install -y software-properties-common python-software-properties && add-apt-repository ppa:beineri/opt-qt561-trusty
-RUN apt-get update && apt-get install -y git qt561-meta-full build-essential mesa-common-dev libglu1-mesa-dev && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y git qt56-meta-full build-essential mesa-common-dev libglu1-mesa-dev && rm -rf /var/lib/apt/lists/*
 
 ENV QT_BASE_DIR=/opt/qt561
 ENV QTDIR=$QT_BASE_DIR
